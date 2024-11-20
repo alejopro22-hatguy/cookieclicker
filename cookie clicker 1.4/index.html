@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Cookie Clicker</h1>
+        <img id="cookie" src="images/cookie.png" alt="Galleta">
+        <p>Clicks: <span id="clickCount">0</span></p>
+        <p>Clicks automatizados por segundo: <span id="autoCPS">0</span></p>
+        <p>Clicks por segundo: <span id="cps">0</span></p>
+        <button id="openUpgradesButton">Mejoras</button>
+        <img id="warning" src="images/warning.png" alt="Advertencia" style="display: none;">
+        <button id="settingsButton">Configuración</button>
+    </div>
+    
+    <div id="upgradesMenu" style="display: none;">
+        <h2>Mejoras</h2>
+        <button id="autoClickerButton">Auto Clicker (10 puntos)</button>
+        <button id="doubleAutoClickerButton">Duplicar Automatizadores (100 puntos)</button>
+        <button id="superClickButton">Super Click (200 puntos)</button>
+        <img id="autoClickerImage" src="images/auto-clicker.png" alt="Auto Clicker" style="display: none;">
+        <button id="closeUpgradesButton">Cerrar</button>
+    </div>
+    
+    <div id="settingsMenu" style="display: none;">
+        <h2>Configuración</h2>
+        <button id="comingSoonButton">Próximamente</button>
+        <button id="achievementsButton">Logros</button>
+        <button id="statsButton">Estadísticas</button>
+        <button id="codesButton">Códigos</button>
+        <button id="backButton">Volver</button>
+    </div>
+    
+    <div id="achievementsMenu" style="display: none;">
+        <h2>Logros</h2>
+        <p id="achievement1">Logro 1: 100 clicks, muy fácil - No completado</p>
+        <p id="achievement2">Logro 2: ¿Por qué clickeas una galleta? - No completado</p>
+        <p id="achievement3">Logro 3: 10 puntos por click que genial :D - No completado</p>
+        <p id="achievement4">Logro 4: ¿Por qué comprarías una mejora sin puntos suficientes? - No completado</p>
+        <p id="achievement5">Logro 5: ¡1 click! facilisimo, ¿verdad? - No completado</p>
+        <button id="backToSettingsButton">Volver</button>
+    </div>
+    
+    <div id="statsMenu" style="display: none;">
+        <h2>Estadísticas</h2>
+        <p id="totalClicks">Clicks totales: 0</p>
+        <p id="timePlayed">Tiempo jugado: 0s</p>
+        <p id="upgradesPurchased">Mejoras compradas: 0</p>
+        <button id="backToSettingsFromStatsButton">Volver</button>
+    </div>
+
+    <div id="codesMenu" style="display: none;">
+        <h2>Introducir Código</h2>
+        <input type="text" id="codeInput" placeholder="Escribe tu código aquí">
+        <button id="submitCodeButton">Enviar</button>
+        <button id="backToSettingsFromCodesButton">Volver</button>
+    </div>
+    
+    <div class="notification" id="notification">¡No tienes puntos suficientes!</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
